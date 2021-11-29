@@ -1,0 +1,58 @@
+﻿@model LibraryManagementSystem.Loan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Loan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

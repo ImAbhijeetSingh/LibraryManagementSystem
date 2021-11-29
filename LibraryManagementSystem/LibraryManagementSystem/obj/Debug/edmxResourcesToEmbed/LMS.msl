@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LlibraryMmanagementSystemModelStoreContainer" CdmEntityContainer="LlibraryMmanagementSystemEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LlibraryMmanagementSystemModel.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="PublishedBy" ColumnName="PublishedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Loans">
+      <EntityTypeMapping TypeName="LlibraryMmanagementSystemModel.Loan">
+        <MappingFragment StoreEntitySet="Loans">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="BookId" ColumnName="BookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="LlibraryMmanagementSystemModel.Member">
+        <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MemType" ColumnName="MemType" />
+          <ScalarProperty Name="MemDate" ColumnName="MemDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishers">
+      <EntityTypeMapping TypeName="LlibraryMmanagementSystemModel.Publisher">
+        <MappingFragment StoreEntitySet="Publishers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="LlibraryMmanagementSystemModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
